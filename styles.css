@@ -1,0 +1,184 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(200, 132, 214, 0.479);
+}
+/* logo marca */
+#logo {
+    height: 40px;
+    width:66px;
+    position: absolute;
+    margin: 6px;
+    border-radius: 15px;
+}
+#back-img {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+/* Estilos do menu */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos do ícone do menu */
+.icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos da seção inicial (home) */
+#home {
+    background-image: url('background.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #000000;
+}
+
+/* Estilos dos botões de chamada para ação (CTA) */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
+/* Estilos do portfólio */
+#portfolio {
+    padding: 40px;
+    text-align: center;
+}
+
+.portfolio-item {
+    margin: 20px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+.portifolio-galeria {
+    width: 450px;
+    height: 350px;
+}
+
+/* Estilos dos serviços */
+#servicos {
+    background-color: #f7f7f7;
+    padding: 40px;
+    text-align: center;
+}
+
+.service {
+    margin: 20px;
+}
+
+/* Estilos do formulário de contato */
+#contato {
+    padding: 40px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333333e0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.img-background{
+    width: 100%;
+    height: 100vh;
+}
+/* Estilos para telas menores (responsividade) */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 1.7em;
+        left: 0;
+        right: 0;
+    }
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .icon {
+        display: flex;
+    }
+}
